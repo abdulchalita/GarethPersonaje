@@ -1,0 +1,125 @@
+.imagen {
+    display: inline-block; /* Esto coloca las imágenes en línea */
+    margin: 3px; /* Agrega un margen entre las imágenes */
+    position:relative
+}
+
+.imagen > div {
+    position:absolute;
+    top:60px;
+    left:90px;
+    z-index:-1;
+    padding:10px;
+    font-size: xx-large;
+  }
+
+.imagen-con-texto {
+    vertical-align: middle;
+    float: left;
+    margin: 5px;
+}
+
+aside {
+    float: right; /* Mover el aside a la derecha */
+    width: 29%; /* Establecer el ancho del aside */
+    background-color: black;
+    border: 19px solid purple;
+}
+
+/* Estilo para el contenido principal */
+main {
+    width: 70%; /* Establecer el ancho del contenido principal */
+    float: left; /* Mover el contenido principal a la izquierda */
+}
+
+.desvanecer:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color:lightblue; background-color:purple;
+}
+
+h2{
+    color:lightblue; background-color:purple;
+}
+
+h3{
+    color:lightblue;
+}
+
+p{
+    color: white; 
+    margin-bottom: 10px;
+}
+
+span{
+    color: white; 
+}
+
+legend{
+    color:white;
+}
+
+a{
+    color:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn-mas{
+    display: none;
+}
+.container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #cc2b2b;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: #fff;
+    color: #cc2b2b;
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #f44141;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
